@@ -4,7 +4,6 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const clients = sequelizeClient.define('clients', {
-  
     name: {
       type: DataTypes.STRING,
       allowNull: false,
